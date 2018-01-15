@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chinmayee.awesomemovieapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/movie_pic"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/movie_pic"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SingleMovieDetail"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <!-- Our ContentProvider -->
+        <provider
+            android:name=".data.favorites.FavMoviesProvider"
+            android:authorities="com.example.chinmayee.awesomemovieapp.data.favorites"
+            android:exported="false" />
+
+        <!-- Our ContentProvider -->
+        <provider
+            android:name=".data.popular.PopMoviesProvider"
+            android:authorities="com.example.chinmayee.awesomemovieapp.data.popular"
+            android:exported="false" />
+
+        <!-- Our ContentProvider -->
+        <provider
+            android:name=".data.toprated.TopMoviesProvider"
+            android:authorities="com.example.chinmayee.awesomemovieapp.data.toprated"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Awesome Movies</string>
+    <string name="err_msg">The activity cannot be displayed...please try again later</string>
+    <string name="title_activity_movie_details_main">MovieDetailsMain</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_test">Test</string>
+    <string name="fav_err_msg">No favorites added yet!</string>
+    <string name="rev_err_msg">No reviews available yet! :(</string>
+    <string name="trailer_err_msg">No trailers available yet! :(</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
