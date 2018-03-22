@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AllThingsSweet</string>
+    <string name="err_msg">Cannot display data...please try again later</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">Test</string>
+    <string name="prev_button_text">&lt;&lt; Previous</string>
+    <string name="next_button_text">Next &gt;&gt;</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="ingredients_title">Ingredients</string>
+    <string name="dataavail">No data available</string>
+</resources>
