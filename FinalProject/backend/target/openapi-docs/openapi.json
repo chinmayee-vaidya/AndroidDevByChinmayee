@@ -1,0 +1,43 @@
+{
+ "swagger": "2.0",
+ "info": {
+  "version": "1.0.0",
+  "title": "gcloudandendpt1.appspot.com"
+ },
+ "host": "gcloudandendpt1.appspot.com",
+ "basePath": "/_ah/api",
+ "schemes": [
+  "https"
+ ],
+ "consumes": [
+  "application/json"
+ ],
+ "produces": [
+  "application/json"
+ ],
+ "paths": {
+  "/myApi/v1/sayJokes": {
+   "post": {
+    "operationId": "MyApiSayJokes",
+    "parameters": [ ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/MyBean"
+      }
+     }
+    }
+   }
+  }
+ },
+ "definitions": {
+  "MyBean": {
+   "properties": {
+    "data": {
+     "type": "string"
+    }
+   }
+  }
+ }
+}

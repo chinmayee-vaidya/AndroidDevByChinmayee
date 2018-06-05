@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JokesFactory</string>
+    <string name="key_val">KEY_JOKE_PASS</string>
+</resources>
